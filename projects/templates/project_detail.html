@@ -3,7 +3,9 @@
 {% load static %}
 
 {% block page_content %}
-<h1>{{ project.title }}</h1>
+    <br>
+<h2>{{ project.title }}</h2>
+    <br>
 <div class="row">
     <div class="col-md-8">
         <img src="{% static project.image %}" alt="" width="100%">
@@ -14,6 +16,9 @@
         <br>
         <h5>Technology used:</h5>
         <p>{{ project.technology }}</p>
+        <br>
+        <h5>GitHub url:</h5>
+        <p>{{ project.github }}</p>
     </div>
 </div>
 

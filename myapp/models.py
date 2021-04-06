@@ -6,7 +6,7 @@ class Book(models.Model):
     pub_date = models.DateTimeField('date published')
 
 
-class Project(models.Model):
+class Resume(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     technology = models.CharField(max_length=20)
