@@ -32,10 +32,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills/Certifications</a></li>
                     <li class="nav-item"><a href="{% url 'project_index' %}" class="nav-link js-scroll-trigger">Projects </a></li>
-
                 </ul>
             </div>
         </nav>
@@ -187,13 +185,17 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div class="subheading mb-3"></div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
                         <li class="list-inline-item"><i class="fab fa-r-project"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-database"></i></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/myapp/img/Unknown.jpg' %}" width='80' height='80' alt=""/></li>
                         <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-dashboard"></i></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/myapp/img/tableau.png' %}" width='52' height='52' alt=""/></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/myapp/img/plotly.jpeg' %}" width='55' height='55' alt=""/></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/myapp/img/excel.png' %}" width='55' height='55' alt=""/></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/myapp/img/access.png' %}" width='55' height='55' alt=""/></li>
+
 
                     </ul>
                     <div class="subheading mb-3">Programming Tools</div>
@@ -209,6 +211,10 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             SQL
+                        </li>
+                                                <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            GitHub
                         </li>
                                                <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -274,18 +280,7 @@
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             Rational Software Testing Certification
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Certified Drone Pilot - FAA
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Certified HAM Radio Operator
-                        </li>
-
                     </ul>
-
-
                 </div>
             </section>
             <hr class="m-0" />
@@ -293,38 +288,6 @@
 
 
         <hr class="m-0" />
-                    <!-- Interests-->
-{#            <section class="resume-section" id="projects">#}
-{#                <div class="resume-section-content">#}
-{#                    <h2 class="mb-5">Projects</h2>#}
-{#                    <p>This is a partial list of the projects I have built in the last year which demonstrates some of the skills#}
-{#                    that I have acquired.</p>#}
-{#Project Stuff#}
-{#{% extends "base.html" %}#}
-{#{% load static %}#}
-{#{% block page_content %}#}
-{#<h1>Projects</h1>#}
-{#<div class="row">#}
-{#{% for project in projects %}#}
-{#    <div class="col-md-4">#}
-{#        <div class="card mb-2">#}
-{#            <img class="card-img-top" src="{% static project.image %}">#}
-{#            <div class="card-body">#}
-{#                <h5 class="card-title">{{ project.title }}</h5>#}
-{#                <p class="card-text">{{ project.description }}</p>#}
-{#                <a href="{% url 'project_detail' project.pk %}"#}
-{#                   class="btn btn-primary">#}
-{#                    Read More#}
-{#                </a>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#    {% endfor %}#}
-{#</div>#}
-{#{% endblock %}#}
-
-{#End Project Stuff                    #}
-
 
                 </div>
             </section>
